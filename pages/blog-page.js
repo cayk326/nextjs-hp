@@ -4,7 +4,7 @@ import { getAllPostsData } from "../lib/posts";
 
 
 
-const Blog = ({ posts }) => {
+export default function Blog ({ posts }) {
   //propsとしてpostsをうけとりmapに展開
   return(
     <Layout title="Blog">
@@ -17,7 +17,7 @@ const Blog = ({ posts }) => {
   );
 };
 
-export default Blog
+
 
 /**
  * サーバーサイドでビルド時に実行される 
